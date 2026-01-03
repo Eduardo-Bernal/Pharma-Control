@@ -23,14 +23,87 @@ header{
 
 .textos-nav{
   display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15%;
-    width: 50%;
-    
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  width: 50%;
+  margin-left: 2%;
 }
 
 a{
     text-decoration: none;
     color: #000000;
+}
+
+.botao-nav {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.botao-nav button {
+    
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 6vw;
+    height: 50%;
+}
+
+
+.btn-entrar {
+    background-color: #ffffff;
+    color: #2ECC71;
+    border: 2px solid #2ECC71;
+}
+
+.btn-entrar:hover {
+    background-color: #efefef;
+    
+}
+
+
+.btn-planos {
+    background-color: #2ECC71;
+    color: #ffffff;
+    border: 2px solid #2ECC71;
+}
+
+.btn-planos:hover {
+    background-color: #27AE60; 
+    border-color: #27AE60;
+}
+
+main{
+    background-image: url("../assets/SEMBG/bgdopharma.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 62vh;
+    border-bottom: 4px solid #2ECC71;
+}
+
+.texto-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 3%;
+    
+}
+
+h1{
+    color: #2ECC71;
+    font-size: 3rem;
+}
+
+p{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
 }
