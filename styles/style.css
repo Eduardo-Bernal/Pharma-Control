@@ -16,6 +16,7 @@ header {
     border-bottom: 4px solid #2ECC71;
     position: fixed;
     width: 100%;
+    top: 0;
 }
 
 .logo {
@@ -87,6 +88,7 @@ main {
     background-repeat: no-repeat;
     height: 62vh;
     border-bottom: 4px solid #2ECC71;
+    margin-top: 10vh;
 }
 
 .texto-main {
@@ -279,4 +281,51 @@ h1 {
 .linkedin img {
     width: 30px;
     margin-top: 2vh;
+}
+
+
+footer {
+    background-color: #F5F7FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 30vh;
+    padding: 1% 4%;
+}
+
+.footer-logo img {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+}
+
+.footer-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.footer-centro p {
+    font-size: 0.8rem;
+    color: #000000;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-redes img {
+    width: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 0.8rem;
+    color: #000000;
 }
