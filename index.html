@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharma Control</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,13 @@
     <main>
         <div class="texto-main">
             <h1>Tenha controle total da sua farmacia</h1>
-            <p class="sub-main">Somos o maior sistema de gerenciamento de drogarias da América Latina, desenvolvido para oferecer controle total de produtos, segurança das informações e eficiência na gestão farmacêutica. Nossa plataforma integra tecnologia moderna e processos inteligentes para otimizar operações, reduzir perdas e apoiar decisões estratégicas no dia a dia da sua farmácia</p>
+            <p class="sub-main">
+            Somos o maior sistema de gerenciamento de drogarias da América Latina, 
+            desenvolvido para oferecer controle total de produtos, segurança das 
+            informações e eficiência na gestão farmacêutica. Nossa plataforma integra 
+            tecnologia moderna e processos inteligentes para otimizar operações, reduzir 
+            perdas e apoiar decisões estratégicas no dia a dia da sua farmácia
+            </p>
         </div>
     </main>
     <section class="solucoes">
@@ -138,6 +145,69 @@
     </div>
 </footer>
 
+<div class="modal-overlay" id="modalPlanos">
+    <div class="modal-planos">
+        <button class="fechar-modal" id="fecharModal">&times;</button>
+
+        <h2 class="titulo-modal">Escolha seu plano</h2>
+
+        <div class="planos-container">
+
+            
+            <div class="plano-card">
+                <h3>Básico</h3>
+                <p class="plano-desc">Ideal para farmácias pequenas</p>
+                <span class="preco">R$ 99<span>/mês</span></span>
+
+                <ul>
+                    <li> ✔ Até 500 produtos</li>
+                    <li> ✔ 1 usuário</li>
+                    <li> ✔ Controle de estoque</li>
+                    <li> ✔ Relatórios básicos</li>
+                    <li> ✔ Suporte por e-mail</li>
+                </ul>
+
+                <button class="btn-plano">Começar agora</button>
+            </div>
+
+
+            <div class="plano-card destaque">
+                <span class="tag-popular">Mais popular</span>
+                <h3>Profissional</h3>
+                <p class="plano-desc">Para farmácias em crescimento</p>
+                <span class="preco">R$ 199<span>/mês</span></span>
+
+                <ul>
+                    <li> ✔ Até 2.000 produtos</li>
+                    <li> ✔ 5 usuários</li>
+                    <li> ✔ Controle de estoque</li>
+                    <li> ✔ Relatórios avançados</li>
+                    <li> ✔ Suporte prioritário</li>
+                </ul>
+
+                <button class="btn-plano ativo">Começar agora</button>
+            </div>
+
+            <div class="plano-card">
+                <h3>Enterprise</h3>
+                <p class="plano-desc">Para redes de farmácias</p>
+                <span class="preco">R$ 399<span>/mês</span></span>
+
+                <ul>
+                    <li> ✔ Produtos ilimitados</li>
+                    <li> ✔ Usuários ilimitados</li>
+                    <li> ✔ Todas as funcionalidades</li>
+                    <li> ✔ Suporte 24/7</li>
+                    <li> ✔ Suporte prioritário</li>
+                </ul>
+
+                <button class="btn-plano">Começar agora</button>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 </body>
+
 </html>

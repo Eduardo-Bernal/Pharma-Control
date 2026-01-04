@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     height: 10vh;
     border-bottom: 4px solid #2ECC71;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
 }
@@ -88,7 +88,6 @@ main {
     background-repeat: no-repeat;
     height: 62vh;
     border-bottom: 4px solid #2ECC71;
-    margin-top: 10vh;
 }
 
 .texto-main {
@@ -328,4 +327,135 @@ footer {
 .footer-links a {
     font-size: 0.8rem;
     color: #000000;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.ativo {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-planos {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    width: 85%;
+    max-width: 1000px;
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.ativo .modal-planos {
+    transform: scale(1);
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.titulo-modal {
+    text-align: center;
+    color: #2ECC71;
+    margin-bottom: 30px;
+}
+
+.planos-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.plano-card {
+    border: 2px solid #ccc;
+    border-radius: 14px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+}
+
+.plano-card h3 {
+    margin-bottom: 5px;
+}
+
+.plano-desc {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.preco {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.preco span {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.plano-card ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.plano-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+
+.btn-plano {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #2ECC71;
+    background: transparent;
+    color: #2ECC71;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-plano.ativo {
+    background: #2ECC71;
+    color: #ffffff;
+}
+
+
+.plano-card.destaque {
+    border-color: #2ECC71;
+    background: #F3FFF8;
+}
+
+.tag-popular {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2ECC71;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 12px;
 }
